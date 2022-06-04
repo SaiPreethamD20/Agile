@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local trained accountant-Agile Ac</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"> -->
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body h1 {
+            font-size: 2.3rem;
+        }
+
+        body p {
+            font-size: 1.5rem;
+        }
+
+        .buttonstyl {
+            font-size: 1.7rem;
+        }
+
+        .overlay-form label {
+            font-size: 0.9rem;
+        }
+
+        .overlay-form input {
+            align-items: center;
+            height: 1.9rem;
+            background-color: #ddd;
+            width: 100%;
+            padding: 6px;
+            font-size: 1rem;
+            color: rgb(12, 10, 10);
+            border: 0.5px solid rgb(17, 15, 15);
+            outline: none;
+
+        }
+
+        .overlay-form .close-btn {
+            position: absolute;
+            justify-content: center;
+            top: 1.5rem;
+            text-align: center;
+            right: 3rem;
+            width: 2.1rem;
+            padding-top: 0px;
+            font-size: 1.7rem;
+            color: white;
+            font-weight: 600;
+            background-color: red;
+            cursor: pointer;
+        }
+
+        .social_footer_ul li a {
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(255, 254, 254);
+            padding: 10px;
+            height: 4rem;
+            border-radius: 50%;
+        }
+
+        .social_footer_ul li i {
+            width: 2rem;
+            /* height: 0.1rem; */
+            text-align: center;
+        }
+
+        .footer_ul_amrc li a {
+            color: white;
+            font-size: 1.25rem;
+            display: block;
+            padding: 1.2px;
+            /* font-size: 10px; */
+        }
+    </style>
+</head>
+<div class="overlay-form" style=" -webkit-background-composite: padding;">
+    <div class="  over1" style="background-color:rgb(233, 243, 252);padding: 15px;">
+        <div style="text-align:center">
+            <h1 style="font-weight:bold; font-size: 1.7rem;">Book a chat</h1>
+            <p style="font-size:1.2rem;">To find out how Agile-accounting can assist your firm, please enter your
+                details and one
+                of our local
+                account
+                managers
+                will contact you at a time that suits your schedule.</p>
+        </div>
+        <form name="google-sheet">
+            <div class="close-btn" onclick="toggleForm()">&times;</div>
+            <div class="form-element">
+                <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="First Name" type="text" class="form-control" placeholder="Enter first name" required>
+            </div>
+            <div class="form-element">
+                <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="Last Name" type="text" class="form-control" placeholder="Enter last name" required>
+            </div>
+            <div class="form-element">
+                <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
+
+                <input name="Email" type="email" class="form-control" placeholder="Enter Email" required>
+            </div>
+            <div class="form-element">
+                <label>Phone number:<span class="input-icon"><i class="fas fa-phone-alt"></i></span></label>
+
+                <input name="Phone number" type="number" class="form-control" placeholder="Enter Phone number" required>
+            </div>
+            <div class="form-element ">
+                <button>Book a chat</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<body>
+    <!-- --------------------------------------nav bar----------------------------------------------- -->
+    <div>
+        <div class="container">
+            <div class="outer-flex ">
+                <a href="index.html"><img src="logoagilel.png"
+                        style="max-width: 100px; padding-left:10px;border-radius: 0px; max-height: 80px;"></a>
+
+                <nav class="navbar">
+                    <a href="#" class="toggle-buttons" style="color: rgb(53, 53, 82); z-index:1;">
+                        <i class="fas fa-bars"></i></a>
+                    <div class="navbar-links">
+                        <ul>
+                            <li><a style="font-size:1.1rem;" href="#">company <i class="arrow down"></i></a>
+                                <ul style="z-index:1; background-color: aqua;">
+                                    <li style="border-radius:15px 15px 0 0;"><a href="The Agile ac difference.html">The
+                                            Agile Ac
+                                            difference</a></li>
+                                    <li><a href="meetourtalent.html">Meet our talent</a></li>
+                                    <li><a href="who_we_are.html">Who we are</a></li>
+                                    <li><a href="contact us.html">contact us</a></li>
+                                    <li style="border-radius:0 0 15px 15px"><a href=""><i
+                                                class='fas fa-external-link-alt'></i> Agile Ac
+                                            careers</a></li>
+                                </ul>
+                            </li>
+                            <li><a style="font-size:1.1rem; width: auto;" href="#">Solutions <i
+                                        class="arrow down"></i></a>
+                                <ul style="z-index:1;background-color: aqua;">
+                                    <li style="border-radius:15px 15px 0 0"><a href="accountant.html">Accountant</a>
+                                    </li>
+                                    <li><a href="Bookkeeper.html">Book keeper</a></li>
+                                    <li><a href="administrator.html">Administrator</a></li>
+                                    <li><a href="cpa.html">CPA</a></li>
+                                    <li><a href="virtualassisant.html">Virtual assistant</a></li>
+                                    <li><a href="local trained talent.html">Locally Trained Talent</a></li>
+                                    <li style="border-radius:0 0 15px 15px"><a href="All solutions.html">All
+                                            solutions</a></li>
+                                </ul>
+                            </li>
+                            <li><a style="font-size:1.1rem;" href="#">Resources <i class="arrow down"></i></a>
+                                <ul style="z-index:1; background-color: white;">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12" style="width:100%;">
+                                            <li
+                                                style="border-radius:15px 15px 0 0;text-align: center;font-weight: bold;color: indigo;font-size: 1.1rem;">
+                                                News and Events
+                                            </li>
+                                            <li><a href="">Announcements</a></li>
+                                            <li
+                                                style="text-align: center;font-weight: bold;color: indigo;font-size: 1.1rem;">
+                                                Education</li>
+                                            <li><a href="">Blog</a></li>
+                                            <li><a href="">Podcasts</a></li>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                            <li
+                                                style="border-radius:15px 15px 0 0;text-align: center;font-weight: bold;color: indigo;font-size: 1.1rem;">
+                                                Free Tools
+                                            </li>
+                                            <li><a href="book a statagy session.html">Book a strategy session</a></li>
+                                            <li><a href="checklist.html">Outsourcing checklist</a></li>
+                                            <li><a href="">Remote team report</a></li>
+                                            <li><a href="">Virtual assistant report</a></li>
+                                            <li><a href="retainandgrow.html">Retain and grow talent guide</a></li>
+                                            <li style="border-radius:0 0 15px 15px"><a href="">Scale and grow your
+                                                    accounting firm</a></li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>
+                                <label class="topnov" style="background-color:white;">
+                                    <span class="screen-reader-text"></span>
+                                    <input type="search" class="search-field" placeholder="Search" value="" name="s"
+                                        title="Search for:" style="border-radius:0.7rem;padding:2px; width:
+                                    8rem;height:22px;background-color:white;font-size: 0.8rem;">
+                                </label>
+                                <button type="submit" class="search-submit topnov" value="Search"
+                                    style="border:none;outline:none;background-color:white;"><span
+                                        class="sr-only">Search</span>
+                                    <img src="https://toaglobal.com/wp-content/themes/generatepress_child/images/search.svg"
+                                        aria-hidden="true" alt="Search icon" style="height: 15px;">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <!-- ---------------------------------------header------------------------------------------------------------- -->
+    <header class="main_header"
+        style="background-image: url(
+       &quot;https://toaglobal.com/wp-content/uploads/2022/02/hero-banner-talent-guide-1.jpg;);background-attachment:
+       scroll; min-width: 780px; left: 0px; width: 780px; background-position: 50% 0px;">
+        <div class="container">
+            <div class="boxes" style="justify-content: start;">
+                <div class="box" style="padding: 30px;">
+
+                    <h1 style="color: rgb(26, 26, 56);padding-bottom: 20px;">Great accounting
+                        people make great
+                        businesses</h1>
+                    <p style="font-size: 1.5rem;padding-bottom: 20px;" id="header_para">
+                        Agile Ac is an outsourcing business, 100% for the accounting industry.We supply great offshore
+                        people to
+                        over 250 firms in the US and Canada. In fact, the accounting industry are the only clients we
+                        serve.
+                    </p>
+
+
+                    <div><button class="buttonstyl" onclick="toggleForm()">Get your free guide</button></div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- ------------------Get the resources you need now,upskilled with our Accelerator Program------------------- -->
+    <div>
+        <div class="container">
+            <div class="row justify-content-lg-center justify-content-md-center">
+                <div class="col-lg-2 col-md-2 col-sm-12" style="width:100%; padding-top: 3rem;">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/11/verification-150x150.png">
+                </div>
+               
+                <div style="padding:40px;text-align:center;">
+                    <h1 style="color: rgb(62, 62, 121);padding-bottom: 20px;font-size: 2.3rem;">Retaining and growing
+                        top accounting talents done right</h1>
+                    <p style="font-size: 1.5rem;">Retaining and growing talent has been a pressing concern in the
+                        accounting industry in recent years. Accounting firm owners and partners have been struggling
+                        with skills shortage and with finding and attracting qualified talent. Retaining top performers
+                        only adds to the pressure.
+                    </p>
+                    <p style="font-size: 1.5rem;">We’ve written this guide to help eliminate these concerns. You won’t
+                        have to waste time figuring out what you can do to keep and grow your team members ever again.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------Forget the time and hassle of recruitment and the weeks of onboarding.-------------------- -->
+    <!-- <div
+        style="background-image:url(https://toaglobal.com/wp-content/uploads/2021/11/purplebg.png);background-color: #4A0466;background-size: cover;">
+        <div class="container justify-content-center" style="text-align:center; padding: 40px;">
+            <h1 style="color: white;padding-bottom:30px;font-size: 2.3rem;">
+                Forget the time and hassle of recruitment and the weeks of onboarding.
+                We’ve done all the hard work for you.</h1>
+            <p style="color: white;font-size: 1.5rem;">If you have an immediate need to fill an accounting generalist
+                role, and you
+                are struggling with spare hours in the day, this option is perfect for you. These accountants are
+                very popular hires, so contact us now to find out more.</p>
+            <button class="buttonstyl" style="font-size: 1.5rem;" onclick="toggleForm()">Book a chat</button>
+        </div>
+    </div> -->
+    <!-- -----------------------------------What does the Accelerator Program cover?------------------------------- -->
+    <!-- <div>
+        <div class="container">
+            <div class="boxes justify-content-center" style="padding: 30px;">
+                <div class=" box">
+                    <h1 style="color: rgb(62, 62, 121);padding-bottom:30px; font-size: 2.3rem;">What does the
+                        Accelerator Program cover?
+                    </h1>
+                    <p style="font-size: 1.5rem;">
+                        Each training group will be led by an experienced US-qualified accountant (based in the US) with
+                        the modules developed based on feedback from accounting firms throughout North America.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/11/accelerator-cover.png" max-width="570"
+                        height="350">
+                </div>
+            </div>
+            <div>
+                <div class="panel-group" id="accordion" style="padding:5px;">
+                    <div class="panel panel-default" style="border-style: none;">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="text-decoration:none;width: 100%;height: 5rem;padding:5px;background-color: #abb8c3
+                            ;">
+                            <div class=" panel-heading">
+                                <h4 class="panel-title">Module 1: Working for Agile’s US Team
+                                </h4>
+                            </div>
+                        </a>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body" style="padding-left: 30px;">
+                                <ol>
+                                    <li style="list-style:disc ;">Standard Agile induction</li>
+                                    <li style="list-style:disc ;">U.S. culture and history</li>
+                                    <li style="list-style:disc ;">Communication expectations for U.S. employees</li>
+                                    <li style="list-style:disc ;">How to WOW your U.S. employer and teammates</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" style="border-style:none;">
+                        <div class="panel-heading" style="background-color: #abb8c3;padding:5px;height: 5rem;">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="text-decoration:none;width: 100%;height: 4rem;background-color:
+                                    #abb8c3; font-size: 1.5rem;">Module 2: Bookkeeping in the US</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body" style="padding-left: 30px;">
+                                <ol>
+                                    <li style="list-style:disc ;">Invoicing, receipting, payment processing</li>
+                                    <li style="list-style:disc ;">Bank reconciliations and depreciation processing</li>
+                                    <li style="list-style:disc ;">Balance to Trial Balance and reports</li>
+                                    <li style="list-style:disc ;">Basic payroll processing</li>
+                                    <li style="list-style:disc ;">Other ad-hoc duties of a bookkeeper (and how to
+                                        prepare information ready for an accountant)</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" style="border-style:none;">
+                        <div class="panel-heading" style="background-color: #abb8c3;padding:5px;height: 5rem;">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="text-decoration:none;width: 100%;height: 4rem;background-color:
+                                    #abb8c3;font-size: 1.5rem;">Module 3: Accounting in the US</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body" style="padding-left:30px;">
+                                <ol>
+                                    <li style="list-style:disc ;">U.S. accounting firms and career progression</li>
+                                    <li style="list-style:disc ;">U.S. company frameworks and basic business structures
+                                        (company, partnership, sole trader, joint venture)</li>
+                                    <li style="list-style:disc ;">U.S. regulations: high-level accounting standards,
+                                        auditing</li>
+                                    <li style="list-style:disc ;">Standards and tax laws</li>
+                                    <li style="list-style:disc ;">Accounting adjustments, prepayments, accruals</li>
+                                    <li style="list-style:disc ;">Close and reporting: month end, quarter end,
+                                        half-year, and annual requirements</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" style="border-style:none;">
+                        <div class="panel-heading" style="background-color: #abb8c3;padding:5px;height: 5rem;">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="text-decoration:none;width: 100%;height: 4rem;background-color:
+                                    #abb8c3;font-size: 1.5rem;">Module 4: Software Packages used in the US</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body" style="padding-left: 30px;">
+                                <ol>
+                                    <li style="list-style:disc ;">Take the Introduction to QuickBooks Online</li>
+                                    <li style="list-style:disc ;">Take and obtain the QuickBooks Online Certification
+                                    </li>
+                                    <li style="list-style:disc ;">Take and obtain the QuickBooks Online Advanced
+                                        Certification</li>
+                                    <li style="list-style:disc ;">Take the QuickBooks Online Payroll</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" style=" border-style:none;">
+                        <div class="panel-heading" style="background-color: #abb8c3;padding:5px;height: 5rem;">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="text-decoration:none;width: 100%;height: 4rem;background-color:
+                                    #abb8c3;font-size: 1.5rem;">Module 5: Business Taxes in the US</a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body" style="padding-left: 30px;">
+                                <ol>
+                                    <li style="list-style:disc ;">U.S. tax overview: federal, state, local, and small
+                                        business taxes – forms, deadlines, and filing</li>
+                                    <li style="list-style:disc ;">The Internal Revenue Service and how to find
+                                        information for your clients
+                                    </li>
+                                    <li style="list-style:disc ;">Company taxes – EIN, income tax, employment tax,
+                                        excise tax, property tax, sales tax, and estimated tax</li>
+                                    <li style="list-style:disc ;">How to prepare business tax information ready for
+                                        review by a manager</li>
+                                    <li style="list-style:disc ;">Interview preparation and practice: how to get the
+                                        role you want and start off on the best foot with your new TOA client/employer
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" style=" border-style:none;">
+                        <div class="panel-heading" style="background-color: #abb8c3;padding:5px;height: 5rem;">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="text-decoration:none;width: 100%;height: 4rem;background-color:
+                                    #abb8c3;font-size: 1.5rem;">Module 6: Individual Taxes in the US</a>
+                            </h4>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse">
+                            <div class="panel-body" style="padding-left: 30px;">
+                                <ol>
+                                    <li style="list-style:disc ;">Taxation for individuals: introduction and overview
+                                    </li>
+                                    <li style="list-style:disc ;">Individual taxes in the U.S.: taxation model and what
+                                        it means</li>
+                                    <li style="list-style:disc ;">How to prepare individual tax returns ready for review
+                                        by a manager</li>
+                                    <li style="list-style:disc ;">Tax recap: individual and business</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" style=" border-style:none;">
+                        <div class="panel-heading" style="background-color: #abb8c3;padding:5px;height: 5rem;">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="text-decoration:none;width: 100%;height: 4rem;background-color:
+                                    #abb8c3;font-size: 1.5rem;">Module 7: Recap and Next Steps</a>
+                            </h4>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse">
+                            <div class="panel-body" style="padding-left: 30px;">
+                                <ol>
+                                    <li style="list-style:disc ;">Recap weeks 1-6, allocation of group presentation
+                                        projects
+                                    </li>
+                                    <li style="list-style:disc ;">6 group presentations – time for peer review and
+                                        feedback</li>
+                                    <li style="list-style:disc ;">Become Xero Advisor Certified and Xero Payroll
+                                        Certified (if necessary)</li>
+                                    <li style="list-style:disc ;">Final assessment preparation and completion</li>
+                                    <li style="list-style:disc ;">Next steps, last-minute questions, and program
+                                        completion celebration</li>
+                                    <li style="list-style:disc ;">Interview preparation and practice: how to get the
+                                        role you want and start off on the best foot with your new Agile client/employer
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+    <!-- -----------------------Qualification and Skills-------------------------- -->
+    <div
+        style="background-image: url(
+       &quot;https://toaglobal.com/wp-content/uploads/2021/11/qualification-and-skills.png&quot;);
+        background-attachment:fixed;background-size:cover;background-repeat: repeat; left: 0px;background: width 120px;padding-bottom:10rem;">
+        <div class="container justify-content-center" style="text-align:center; color:white;padding:40px;">
+            <h1 style="padding-bottom :30px ;font-size: 2.3rem;">
+                Inside, you will discover why you need to…</h1>
+            
+        </div>
+            <!-- <img src="https://toaglobal.com/wp-content/uploads/2021/11/accreditation.png" width="100%"
+                style="padding:30px;"> -->
+            <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                <div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-xs">
+                    <div class="vc_column-inner">
+                        <div class="wpb_wrapper">
+                            <div class="smile_icon_list_wrap ult_info_list_container ult-adjust-bottom-margin  ">
+                                <ul class="smile_icon_list right circle with_bg">
+                                    <li class="icon_list_item col-lg-6" style=" font-size:72px;">
+                                        <div class="icon_list_icon" data-animation="" data-animation-delay="03"
+                                            style="font-size:24px;border-width:1px;border-style:none;display:inline;background:#ffffff;color:#4a0466;border-color:#333333;">
+                                            <img class="list-img-icon" alt="null"
+                                                src="https://toaglobal.com/wp-content/uploads/2021/11/failure-1.png">
+                                        </div>
+                                        <div class="icon_description" id="Info-list-wrap-4080" style="font-size:24px;">
+                                            <div class="icon_description_text ult-responsive"
+                                                data-ultimate-target="#Info-list-wrap-4080 .icon_description_text"
+                                                data-responsive-json-new="{&quot;font-size&quot;:&quot;desktop:20px;&quot;,&quot;line-height&quot;:&quot;desktop:24px;&quot;}"
+                                                style="color:#ffffff;">
+                                                <p style="text-align: left; color: #fff;">Pay attention to your
+                                                    onboarding experience</p>
+                                            </div>
+                                        </div>
+                                        <div class="icon_list_connector" style="border: none !important;"></div>
+                                    </li>
+                                    <li class="icon_list_item col-lg-6" style=" font-size:72px;">
+                                        <div class="icon_list_icon" data-animation="" data-animation-delay="03"
+                                            style="font-size:24px;border-width:1px;border-style:none;display:inline;background:#ffffff;color:#4a0466;border-color:#333333;">
+                                            <img class="list-img-icon" alt="null"
+                                                src="https://toaglobal.com/wp-content/uploads/2021/11/wrench.png"></div>
+                                        <div class="icon_description" id="Info-list-wrap-2303" style="font-size:24px;">
+                                            <div class="icon_description_text ult-responsive"
+                                                data-ultimate-target="#Info-list-wrap-2303 .icon_description_text"
+                                                data-responsive-json-new="{&quot;font-size&quot;:&quot;desktop:20px;&quot;,&quot;line-height&quot;:&quot;desktop:24px;&quot;}"
+                                                style="color:#ffffff;">
+                                                <p>Offer upskilling opportunities</p>
+                                            </div>
+                                        </div>
+                                        <div class="icon_list_connector" style="border: none !important;"></div>
+                                    </li>
+                                    <li class="icon_list_item col-lg-6" style=" font-size:72px;">
+                                        <div class="icon_list_icon" data-animation="" data-animation-delay="03"
+                                            style="font-size:24px;border-width:1px;border-style:none;display:inline;background:#ffffff;color:#4a0466;border-color:#333333;">
+                                            <img class="list-img-icon" alt="null"
+                                                src="https://toaglobal.com/wp-content/uploads/2021/11/team.png"></div>
+                                        <div class="icon_description" id="Info-list-wrap-7824" style="font-size:24px;">
+                                            <div class="icon_description_text ult-responsive"
+                                                data-ultimate-target="#Info-list-wrap-7824 .icon_description_text"
+                                                data-responsive-json-new="{&quot;font-size&quot;:&quot;desktop:20px;&quot;,&quot;line-height&quot;:&quot;desktop:24px;&quot;}"
+                                                style="color:#ffffff;">
+                                                <p>Provide Professional Development Plans </p>
+                                            </div>
+                                        </div>
+                                        <div class="icon_list_connector" style="border: none !important;"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-xs">
+                    <div class="vc_column-inner">
+                        <div class="wpb_wrapper">
+                            <div class="smile_icon_list_wrap ult_info_list_container ult-adjust-bottom-margin  ">
+                                <ul class="smile_icon_list left circle with_bg">
+                                    <li class="icon_list_item col-lg-6" style=" font-size:72px;">
+                                        <div class="icon_list_icon" data-animation="" data-animation-delay="03"
+                                            style="font-size:24px;border-width:1px;border-style:none;display:inline;background:#ffffff;color:#4a0466;border-color:#333333;">
+                                            <img class="list-img-icon" alt="null"
+                                                src="https://toaglobal.com/wp-content/uploads/2021/11/talent-search.png">
+                                        </div>
+                                        <div class="icon_description" id="Info-list-wrap-9388" style="font-size:24px;">
+                                            <div class="icon_description_text ult-responsive"
+                                                data-ultimate-target="#Info-list-wrap-9388 .icon_description_text"
+                                                data-responsive-json-new="{&quot;font-size&quot;:&quot;desktop:20px;&quot;,&quot;line-height&quot;:&quot;desktop:24px;&quot;}"
+                                                style="color:#ffffff;">
+                                                <p>Pay well (not just in money)</p>
+                                            </div>
+                                        </div>
+                                        <div class="icon_list_connector" style="border: none !important;"></div>
+                                    </li>
+                                    <li class="icon_list_item col-lg-6" style=" font-size:72px;">
+                                        <div class="icon_list_icon" data-animation="" data-animation-delay="03"
+                                            style="font-size:24px;border-width:1px;border-style:none;display:inline;background:#ffffff;color:#4a0466;border-color:#333333;">
+                                            <img class="list-img-icon" alt="null"
+                                                src="https://toaglobal.com/wp-content/uploads/2021/11/speech.png">
+                                        </div>
+                                        <div class="icon_description" id="Info-list-wrap-4732" style="font-size:24px;">
+                                            <div class="icon_description_text ult-responsive"
+                                                data-ultimate-target="#Info-list-wrap-4732 .icon_description_text"
+                                                data-responsive-json-new="{&quot;font-size&quot;:&quot;desktop:20px;&quot;,&quot;line-height&quot;:&quot;desktop:24px;&quot;}"
+                                                style="color:#ffffff;">
+                                                <p>Provide time to play</p>
+                                            </div>
+                                        </div>
+                                        <div class="icon_list_connector" style="border: none !important;"></div>
+                                    </li>
+                                    <li class="icon_list_item col-lg-6" style=" font-size:72px;">
+                                        <div class="icon_list_icon" data-animation="" data-animation-delay="03"
+                                            style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#4a0466;border-color:#333333;display:inline;">
+                                            <img class="list-img-icon" alt="null"
+                                                src="https://toaglobal.com/wp-content/uploads/2021/11/question-mark.png">
+                                        </div>
+                                        <div class="icon_description" id="Info-list-wrap-3892"
+                                            style="font-size:24px;display:inline;">
+                                            <div class="icon_description_text ult-responsive"
+                                                data-ultimate-target="#Info-list-wrap-3892 .icon_description_text"
+                                                data-responsive-json-new="{&quot;font-size&quot;:&quot;desktop:20px;&quot;,&quot;line-height&quot;:&quot;desktop:24px;&quot;}"
+                                                style="color:#ffffff;">
+                                                <p>Channel their restless energy</p>
+                                            </div>
+                                        </div>
+                                        <div class="icon_list_connector" style="border: none !important;"></div>
+                                    </li>
+                                    <li class="icon_list_item col-lg-6" style=" font-size:72px;">
+                                        <div class="icon_list_icon" data-animation="" data-animation-delay="03"
+                                            style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;display:inline;color:#4a0466;border-color:#333333;">
+                                            <img class="list-img-icon" alt="null"
+                                                src="https://toaglobal.com/wp-content/uploads/2021/11/question-mark.png">
+                                        </div>
+                                        <div class="icon_description" id="Info-list-wrap-5209" style="font-size:24px;display:inline;">
+                                            <div class="icon_description_text ult-responsive"
+                                                data-ultimate-target="#Info-list-wrap-5209 .icon_description_text"
+                                                data-responsive-json-new="{&quot;font-size&quot;:&quot;desktop:20px;&quot;,&quot;line-height&quot;:&quot;desktop:24px;&quot;}"
+                                                style="color:#ffffff;">
+                                                <p>Recognize achievements and milestones</p>
+                                            </div>
+                                        </div>
+                                        <div class="icon_list_connector" style="border: none !important;"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <div>
+             <div style="padding-top:10px;padding-bottom:2rem;">
+                 <button class="buttonstyl" onclick="toggleForm()">Get your free guide</button>
+             </div>
+        </div>
+       
+    </div>
+    <!-- --------------Agile accounting provides outsourced resources to 250+ firms in North America------------------- -->
+    <div>
+        <div class="container">
+            <div class="boxes" style="padding:30px">
+                <div class="box">
+                    <h1 style="color:rgb(62, 62, 121);padding-bottom:30px;">The definitive guide to
+                        retaining and growing top accounting talents</h1>
+                    <p>Retaining and growing top accounting talents done right</p>
+                    <a href="The Agile ac difference.html"><button class="buttonstyl">
+                            Get your free guide</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- connecting pages nav bar -->
+    <div style="background-color: rgb(7, 95, 83);">
+        <div class="container">
+            <div class="row">
+                <a style="color:white;font-size: 1.5rem;" href="index.html">Home </a>
+                <a style="color:white;font-size: 1.5rem;" href="index.html"> >> Resources </a>
+                <a style="color:white;font-size: 1.5rem;"> >> Talent Guide (NA)
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end of connecting pages nav bar -->
+    <!----------footer-------->
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class=" col-lg-2 col-md-4 col-sm-6" style="padding:25px;">
+
+                    <a href="index.html"><img src="logoagilel.png" style="width:60%; padding: 0px;"></a>
+                    <p style="font-size: 1.3rem;"><i class="fa fa-location-arrow"></i> Location comes here</p>
+                    <p style="font-size: 1.3rem;"><i class="fa fa-phone"></i> <a href="tel:+1 (408)214-9890" target=""
+                            class="in-grid-item cardClick" data-wpel-link="internal"
+                            style="font-size:1.3rem;color: white;padding:0%;">
+                            +1-(408) 214-9890</a>
+                    </p>
+
+                    <p style="font-size: 1.3rem;"><i class="fa fa fa-envelope"></i> <a href="mailto:info@agileac.com"
+                            style="font-size:1.3rem;color: white;padding:0%;">
+                            info@agileac.com </a> </p>
+                </div>
+
+
+                <div class="  col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 1.3rem;color:cyan;">company
+                    </h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="The Agile ac difference.html">The AGILE Ac difference</a></li>
+                        <li><a href="meetourtalent.html">Meet our talent</a></li>
+                        <li><a href="who_we_are.html">Who we are</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="  col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 1.3rem;color:cyan;">Solutions
+                    </h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="accountant.html">Accountant</a></li>
+                        <li><a href="cpa.html">CPA</a></li>
+                        <li><a href="Bookkeeper.html">Bookkeeper</a></li>
+                        <li><a href="administrator.html">Administrator</a></li>
+                        <li><a href="virtualassisant.html">Virtual assistant</a></li>
+                        <li><a href="local trained talent.html">Locally Trained Talent NA</a></li>
+                        <li><a href="All solutions.html">All solutions</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="  col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 1.3rem;color:cyan;">Resources
+                    </h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="book a statagy session.html">Book a strategy session</a></li>
+                        <li><a href="checklist.html">Outsourcing checklist</a></li>
+                        <li><a href="">Remote team report</a></li>
+                        <li><a href="">Virtual assistant guide</a></li>
+                        <li><a href="retainandgrow.html">Retain and grow talent guide</a></li>
+                        <li><a href="">Scale and grow your accounting firm</a></li>
+                    </ul>
+
+                </div>
+                <div class="  col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 1.3rem;color:cyan;">
+                        Agile Accounting Links
+                    </h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href=""><i class='fas fa-external-link-alt'></i> Ab² Institute of accounting</a>
+                        </li>
+                        <li><a href=""><i class='fas fa-external-link-alt'></i> AGILE Ac careers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+
+            <p class="text-center" style="font-size: 1rem;">All Rights Reserved Agile Accounting @2022 </p>
+
+            <ul class="social_footer_ul">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/agile-accounting/"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- ---------for google form data storage--------------------- -->
+    <script src="app.js"></script>
+    <script src="form.js"></script>
+    <!-- --------------------for nav bar toggle----------------- -->
+    <script>
+        function toggleForm() {
+            document.body.classList.toggle('activeForm');
+        }
+    </script>
+
+</body>
+
+</html>
